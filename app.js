@@ -230,10 +230,7 @@ if (!rw) {
 console.log("RUNWAY =", rw.name);
 
 /* PHASE */
-let phase = "Décollage";
-if (fids.arrivals.length > fids.departures.length) {
-  phase = "Atterrissage";
-}
+let phase = (rw.name === "22") ? "Décollage" : "Atterrissage";
 
 console.log("PHASE =", phase);
 
